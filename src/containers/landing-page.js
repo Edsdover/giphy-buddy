@@ -12,6 +12,9 @@ class LandingPage extends React.Component {
     this.props.actions.getTrendingGifs(10, 0);
   }
 
+  // Detects when user has hit the bottom of the document
+  // TODO: Add offset logic action to return infinite gifs
+
   // componentDidMount() {
   //   window.onscroll = function() {
   //     var d = document.documentElement;
@@ -22,7 +25,7 @@ class LandingPage extends React.Component {
   //       console.log('At the bottom');
   //       var limit = 20;
   //       var offset = 0;
-  //       this.props.actions.getTrendingGifs(limit, offset);
+  //       this.props.actions.getOffsetGifsBySearchOptions(limit, offset, this.state.searchOptions);
   //     }
   //   }
   // }

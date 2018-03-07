@@ -13,7 +13,7 @@ const API_URL = 'https://api.giphy.com/v1/gifs/search';
 const API_TRENDING_URL = 'https://api.giphy.com/v1/gifs/trending';
 const API_KEY = '3NPmnY44OnumyMDI1p8AT4V1FRsaShAI';
 
-// Normally firebaseConfig would never be exposed but for the sake of this demo and eaze of use I am leaving it in.
+// Normally firebaseConfig would never be exposed but for the sake of this demo and eaze of use, I am leaving it in.
 const firebaseConfig = {
   apiKey: "AIzaSyB9Lpw9tNFriki7666zpA0htR3hRwhtaUI",
   authDomain: "playgroundreact.firebaseapp.com",

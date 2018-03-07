@@ -1,6 +1,6 @@
 import React from 'react';
 import GifItem from './gif-item';
-import ErrorBoundray from './error-boundary';
+import ErrorBoundary from './error-boundary';
 import '../styles/gif-list.css'
 
 const GifList = (props) => {
@@ -15,9 +15,9 @@ const GifList = (props) => {
     });
 
     return (
-      <ErrorBoundray>
+      <ErrorBoundary>
         <div className="gif-list">{gifItems}</div>
-      </ErrorBoundray>
+      </ErrorBoundary>
     );
 };
 
