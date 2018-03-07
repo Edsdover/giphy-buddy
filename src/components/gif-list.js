@@ -5,13 +5,15 @@ import '../styles/gif-list.css'
 
 const GifList = (props) => {
     const gifItems = props.gifs.map((image) => {
-        return <GifItem key={image.id}
-                        gif={image}
-                        onGifSelect={props.onGifSelect}
-                        onFavoriteSelect={props.onFavoriteSelect}
-                        onFavoriteUnselect={props.onFavoriteUnselect}
-                        isAuthenticated={props.isAuthenticated}
-                        isFavorite={props.isFavorite} />
+        return <GifItem
+                      key={image.id}
+                      gif={image}
+                      onGifSelect={props.onGifSelect}
+                      onFavoriteSelect={props.onFavoriteSelect}
+                      onFavoriteUnselect={props.onFavoriteUnselect}
+                      isAuthenticated={props.isAuthenticated}
+                      isFavorite={props.isFavorite}
+                    />
     });
 
     return (
