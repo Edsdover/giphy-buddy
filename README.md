@@ -1,4 +1,4 @@
-# Giphy Buddy
+# Giphy Buddy React/Redux
 
 Giphy Buddy project app with React/Redux.
 
