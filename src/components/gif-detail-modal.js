@@ -16,7 +16,7 @@ const GifDetailModal = (props) => {
         left: '50%',
         padding: '2rem',
         right: 'auto',
-        top: '50%', // start from center
+        top: '35%', // start from center
         transform: 'translate(-50%,-250px)', // adjust top "up" based on height
         width: 'auto',
         maxWidth: '40rem'
