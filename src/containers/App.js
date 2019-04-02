@@ -7,7 +7,7 @@ import { connect } from 'react-redux';
 import Header from '../containers/header';
 import LandingPage from '../containers/landing-page';
 import Login from '../containers/login';
-import Favorites from '../containers/favorites';
+import WritePost from '../containers/write-post';
 import Signup from '../containers/signup';
 import '../styles/app.css';
 
@@ -43,7 +43,7 @@ class App extends React.Component {
             <Route exact path="/" component={ LandingPage }/>
             <PublicRoute authenticated={this.props.authenticated }  path="/signup" component={ Signup } />
             <PublicRoute authenticated={this.props.authenticated }  path="/login" component={ Login } />
-            <PrivateRoute authenticated={this.props.authenticated }  path="/favorites" component={ Favorites } />
+            <PrivateRoute authenticated={this.props.authenticated }  path="/write-post" component={ WritePost } />
           </div>
         </div>
       </ConnectedRouter>

@@ -15,7 +15,7 @@ class Header extends React.Component {
     if (this.props.authenticated) {
       return [
         <p className="nav-item" key={1}>
-          <Link className="nav-link" to="/favorites">My Favorites</Link>
+          <Link className="nav-link" to="/write-post">Write Post</Link>
         </p>,
         <p className="nav-item" key={2}>
           <a className="nav-link right-side-nav" onClick={() => this.callSignoutAction()}>Sign Out</a>
@@ -38,7 +38,7 @@ class Header extends React.Component {
       <header className="app-header">
       <img src={logo} className="react-logo" alt="logo" />
         <Link className="home-link" to="/">
-          <h1 className="app-title">GIPHY Buddy</h1>
+          <h1 className="app-title">Devin's Girlfriend's Blog</h1>
         </Link>
         <div className="header-links">
           { this.renderAuthLinks() }
